@@ -10,17 +10,19 @@
   <body>
     <!--Шапка сайта-->
     <header>
-      <nav>
-        <a href="./index.html">Web Studio</a>
+      <nav class="site-nav">
+        <a class="main-text" class="logo-color" href="./index.html"
+          ><span class="logo-blue">Web</span> Studio</a
+        >
         <ul>
-          <li><a class="btn" href="">Студия</a></li>
-          <li><a class="btn" href="">Контакты</a></li>
-          <li><a class="btn" href="./html/portfolio.html">Портфолио</a></li>
+          <li><a class="nav-btn current" href="./index.html">Студия</a></li>
+          <li><a class="nav-btn" href="">Контакты</a></li>
+          <li><a class="nav-btn" href="./portfolio.html">Портфолио</a></li>
         </ul>
       </nav>
       <ul>
         <li>
-          <a href="mailto:info@devstudio.com"
+          <a class="contact-link" href="mailto:info@devstudio.com"
             ><img
               src="./image/icon-mail.svg"
               alt="Почта"
@@ -28,7 +30,7 @@
           >
         </li>
         <li>
-          <a href="tel:+380961111111"
+          <a class="contact-link" href="tel:+380961111111"
             ><img src="./image/icon-tel.svg" alt="Телефон" /> +38 096 111 11
             11</a
           >
@@ -40,8 +42,8 @@
       <!--Герой-->
       <section class="hero">
         <img src="./" alt="Главная картинка" width="1600" />
-        <h1>Эффективные решения для вашего бизнеса</h1>
-        <a href="">Заказать услугу</a>
+        <h1 class="white-text">Эффективные решения для вашего бизнеса</h1>
+        <a class="btn-order" href="">Заказать услугу</a>
       </section>
 
       <!--Наши преимущества-->
@@ -106,7 +108,7 @@
               width="370"
               height="294"
             />
-            <p>Десктопные приложения</p>
+            <p class="white-text">Десктопные приложения</p>
           </li>
           <li>
             <img
@@ -115,7 +117,7 @@
               width="370"
               height="294"
             />
-            <p>Мобильные приложения</p>
+            <p class="white-text">Мобильные приложения</p>
           </li>
           <li>
             <img
@@ -124,7 +126,7 @@
               width="370"
               height="294"
             />
-            <p>Дизайнерские решения</p>
+            <p class="white-text">Дизайнерские решения</p>
           </li>
         </ul>
       </section>
@@ -135,7 +137,7 @@
         <ul>
           <li>
             <img src="./image/john-smith.jpg" alt="Джон Смит" width="270" />
-            <h3>John Smith</h3>
+            <h3 class="section-title">Николай Кучеренко</h3>
             <p>Product Designer</p>
             <ul>
               <li>
@@ -162,7 +164,7 @@
           </li>
           <li>
             <img src="./image/marta-stewart.jpg" alt="Марта Стюарт" />
-            <h3 class="section-title">Marta Stewart</h3>
+            <h3 class="section-title">Ольга Иванова</h3>
             <p>Frontend Developer</p>
             <ul>
               <li>
@@ -189,7 +191,7 @@
           </li>
           <li>
             <img src="./image/robert-jakis.jpg" alt="Роберт Джекис" />
-            <h3 class="section-title">Robert Jakis</h3>
+            <h3 class="section-title">Андрей Шевченко</h3>
             <p>Marketing</p>
             <ul>
               <li>
@@ -216,7 +218,7 @@
           </li>
           <li>
             <img src="./image/martin-doe.jpg" alt="Мартин Доу" />
-            <h3 class="section-title">Martin Doe</h3>
+            <h3 class="section-title">Иван Николаев</h3>
             <p>UI Designer</p>
             <ul>
               <li>
@@ -269,19 +271,28 @@
       </section>
     </main>
 
-    <footer>
-      <p>Web Studio</p>
-      <address>г. Киев, пр-т Леси Украинки, 26</address>
-      <p>info@example.com</p>
-      <p>+38 099 111 11 11</p>
+    <footer class="footer">
+      <p>
+        <a class="footer-text" href="./index.html"
+          ><span class="logo-blue">Web</span> Studio</a
+        >
+      </p>
+      <address class="footer-text">г. Киев, пр-т Леси Украинки, 26</address>
+      <a class="contact-link" href="mailto:info@devstudio.com"
+        >info@devstudio.com</a
+      >
+      <a class="contact-link" href="tel:+380961111111">+38 096 111 11 11</a>
 
-      <p>присоединяйтесь</p>
+      <p class="footer-text">присоединяйтесь</p>
       <ul>
         <li><a href=""></a></li>
         <li><a href=""></a></li>
         <li><a href=""></a></li>
         <li><a href=""></a></li>
       </ul>
+
+      <p class="footer-text">Подпишитесь на рассылку</p>
+      <p class="footer-text">Подписаться</p>
 
       <p>2020 | Developed by GoIT Students</p>
     </footer>

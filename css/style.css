@@ -1,21 +1,26 @@
 :root {
-  --background-color: #ffffff;
+  --bcg-color: #ffffff;
   --primary-text-color: #212121;
   --secondary-text-color: #757575;
   --select-color: #2196f3;
+  --white: #ffffff;
+  --footer-color: #2f303a;
+  --btn-select-bcg: #f5f4fa;
 }
 
 body {
   background-color: var(--background-color);
 }
 
+.logo-blue {
+  color: var(--select-color);
+}
+
 p {
   color: var(--secondary-text-color);
 }
 
-h1,
-h2,
-h3 {
+.main-text {
   color: var(--primary-text-color);
 }
 
@@ -27,11 +32,57 @@ a {
   text-decoration: none;
 }
 
-.btn {
+.section-title {
   color: var(--primary-text-color);
 }
 
-.btn:hover,
-.btn:focus {
+.nav-btn {
+  color: var(--primary-text-color);
+}
+
+.nav-btn:hover,
+.nav-btn:focus {
   color: var(--select-color);
+}
+
+.nav-btn.current {
+  color: var(--select-color);
+}
+
+.btn-order,
+.btn-select:hover,
+.btn-select:focus,
+.btn-select.current {
+  color: var(--white);
+  background-color: var(--select-color);
+}
+.btn-select {
+  color: var(--primary-text-color);
+  background-color: var(--btn-select-bcg);
+}
+
+.contact-link {
+  color: var(--secondary-text-color);
+}
+
+.contact-link:hover {
+  color: var(--select-color);
+}
+
+.footer > .contact-link {
+  color: var(--secondary-text-color);
+}
+
+.white-text {
+  color: var(--white);
+  background-color: var(--secondary-text-color);
+}
+
+.footer {
+  background-color: var(--footer-color);
+}
+
+.footer-text {
+  color: var(--white);
+  background-color: var(--footer-color);
 }

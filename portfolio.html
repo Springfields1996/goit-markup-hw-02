@@ -4,23 +4,27 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>WEB Studio</title>
-    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="./css/style.css" />
   </head>
 
   <body>
     <!--Шапка сайта-->
     <header>
-      <nav>
-        <a href="./index.html">Web Studio</a>
+      <nav class="site-nav">
+        <a class="main-text" class="logo-color" href="./index.html"
+          ><span class="logo-blue">Web</span> Studio</a
+        >
         <ul>
-          <li><a class="btn" href="">Студия</a></li>
-          <li><a class="btn" href="./html/portfolio.html">Портфолио</a></li>
-          <li><a class="btn" href="">Контакты</a></li>
+          <li><a class="nav-btn" href="./index.html">Студия</a></li>
+          <li><a class="nav-btn" href="">Контакты</a></li>
+          <li>
+            <a class="nav-btn current" href="./portfolio.html">Портфолио</a>
+          </li>
         </ul>
       </nav>
       <ul>
         <li>
-          <a href="mailto:info@devstudio.com"
+          <a class="contact-link" href="mailto:info@devstudio.com"
             ><img
               src="../image/icon-mail.svg"
               alt="Почта"
@@ -28,7 +32,7 @@
           >
         </li>
         <li>
-          <a href="tel:+380961111111"
+          <a class="contact-link" href="tel:+380961111111"
             ><img src="../image/icon-tel.svg" alt="Телефон" /> +38 096 111 11
             11</a
           >
@@ -39,16 +43,18 @@
     <main>
       <section class="section">
         <ul>
-          <li><a href="./html/portfolio.html">Всё</a></li>
-          <li><a href="">Веб-сайты</a></li>
-          <li><a href="">Приложения</a></li>
-          <li><a href="">Дизайн</a></li>
-          <li><a href="">Маркетинг</a></li>
+          <li>
+            <a class="btn-select current" href="./html/portfolio.html">Всё</a>
+          </li>
+          <li><a class="btn-select" href="">Веб-сайты</a></li>
+          <li><a class="btn-select" href="">Приложения</a></li>
+          <li><a class="btn-select" href="">Дизайн</a></li>
+          <li><a class="btn-select" href="">Маркетинг</a></li>
         </ul>
       </section>
 
       <section class="section">
-        <h2>Примеры работ</h2>
+        <h2 class="section-title">Примеры работ</h2>
         <ul>
           <li>
             <a href=""></a>
@@ -58,7 +64,7 @@
               width="370"
               height="294"
             />
-            <h3>Технокряк</h3>
+            <h3 class="section-title">Технокряк</h3>
             <p>Веб-сайт</p>
           </li>
           <li>
@@ -69,7 +75,7 @@
               width="370"
               height="294"
             />
-            <h3>Постер New Orlean vs Golden Star</h3>
+            <h3 class="section-title">Постер New Orlean vs Golden Star</h3>
             <p>Дизайн</p>
           </li>
           <li>
@@ -80,7 +86,7 @@
               width="370"
               height="294"
             />
-            <h3>Ресторан Seafood</h3>
+            <h3 class="section-title">Ресторан Seafood</h3>
             <p>Приложение</p>
           </li>
           <li>
@@ -91,7 +97,7 @@
               width="370"
               height="294"
             />
-            <h3>Проект Prime</h3>
+            <h3 class="section-title">Проект Prime</h3>
             <p>Маркетинг</p>
           </li>
           <li>
@@ -102,7 +108,7 @@
               width="370"
               height="294"
             />
-            <h3>Проект Boxes</h3>
+            <h3 class="section-title">Проект Boxes</h3>
             <p>Приложение</p>
           </li>
           <li>
@@ -113,7 +119,7 @@
               width="370"
               height="294"
             />
-            <h3>Inspiration has no Borders</h3>
+            <h3 class="section-title">Inspiration has no Borders</h3>
             <p>Веб-сайт</p>
           </li>
           <li>
@@ -124,7 +130,7 @@
               width="370"
               height="294"
             />
-            <h3>Издание Limited Edition</h3>
+            <h3 class="section-title">Издание Limited Edition</h3>
             <p>Дизайн</p>
           </li>
           <li>
@@ -135,7 +141,7 @@
               width="370"
               height="294"
             />
-            <h3>Проект LAB</h3>
+            <h3 class="section-title">Проект LAB</h3>
             <p>Маркетинг</p>
           </li>
           <li>
@@ -146,26 +152,35 @@
               width="370"
               height="294"
             />
-            <h3>Growing Business</h3>
+            <h3 class="section-title">Growing Business</h3>
             <p>Приложение</p>
           </li>
         </ul>
       </section>
     </main>
 
-    <footer>
-      <p>Web Studio</p>
-      <address>г. Киев, пр-т Леси Украинки, 26</address>
-      <p>info@example.com</p>
-      <p>+38 099 111 11 11</p>
+    <footer class="footer">
+      <p>
+        <a class="footer-text" href="./index.html"
+          ><span class="logo-blue">Web</span> Studio</a
+        >
+      </p>
+      <address class="footer-text">г. Киев, пр-т Леси Украинки, 26</address>
+      <a class="contact-link" href="mailto:info@devstudio.com"
+        >info@devstudio.com</a
+      >
+      <a class="contact-link" href="tel:+380961111111">+38 096 111 11 11</a>
 
-      <p>присоединяйтесь</p>
+      <p class="footer-text">присоединяйтесь</p>
       <ul>
         <li><a href=""></a></li>
         <li><a href=""></a></li>
         <li><a href=""></a></li>
         <li><a href=""></a></li>
       </ul>
+
+      <p class="footer-text">Подпишитесь на рассылку</p>
+      <p class="footer-text">Подписаться</p>
 
       <p>2020 | Developed by GoIT Students</p>
     </footer>
