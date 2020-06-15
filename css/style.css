@@ -9,15 +9,12 @@
 }
 
 body {
-  background-color: var(--background-color);
+  background-color: var(--bcg-color);
+  color: var(--secondary-text-color);
 }
 
 .logo-blue {
   color: var(--select-color);
-}
-
-p {
-  color: var(--secondary-text-color);
 }
 
 .main-text {
@@ -56,6 +53,7 @@ a {
   color: var(--white);
   background-color: var(--select-color);
 }
+
 .btn-select {
   color: var(--primary-text-color);
   background-color: var(--btn-select-bcg);
