@@ -25,6 +25,10 @@ li {
   list-style-type: none;
 }
 
+.logo-blue {
+  color: var(--select-color);
+}
+
 .logo {
   color: var(--primary-text-color);
 
@@ -32,12 +36,9 @@ li {
   font-style: normal;
   font-weight: 700;
   font-size: 26px;
+
   line-height: 1.2;
   letter-spacing: 0.03em;
-}
-
-.logo-blue {
-  color: var(--select-color);
 }
 
 header .contact-link {
@@ -201,6 +202,10 @@ address {
 
 .footer {
   background-color: var(--footer-color);
+}
+
+.footer-text.logo {
+  color: var(--white);
 }
 
 .footer-text {
