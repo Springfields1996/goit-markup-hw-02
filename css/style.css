@@ -16,6 +16,14 @@ body {
   font-family: "Roboto", sans-serif;
   font-style: normal;
   font-size: 14px;
+
+  margin: 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
 }
 
 a {
@@ -24,6 +32,13 @@ a {
 
 li {
   list-style-type: none;
+}
+
+p,
+h1,
+h2,
+h3 {
+  margin: 0;
 }
 
 .logo-blue {
@@ -68,7 +83,7 @@ header .contact-link {
   color: var(--primary-text-color);
 }
 
-h2.section-title {
+.section-title {
   color: var(--primary-text-color);
 
   font-weight: 700;
@@ -79,7 +94,7 @@ h2.section-title {
   letter-spacing: 0.03em;
 }
 
-h3.section-title {
+.subsection-title {
   color: var(--primary-text-color);
 
   font-weight: 700;
@@ -130,8 +145,11 @@ h3.section-title {
   font-weight: 700;
   line-height: 1.14;
   text-align: center;
+
   letter-spacing: 0.03em;
   text-transform: uppercase;
+
+  width: 370px;
 }
 
 .team .member-name {
@@ -143,6 +161,8 @@ h3.section-title {
 
   text-align: center;
   letter-spacing: 0.03em;
+
+  width: 270px;
 }
 
 .team .text {
@@ -152,6 +172,8 @@ h3.section-title {
 
   text-align: center;
   letter-spacing: 0.03em;
+
+  width: 270px;
 }
 
 address .footer-text {
@@ -264,4 +286,8 @@ address .footer-text {
 
   text-align: center;
   letter-spacing: 0.03em;
+}
+
+.hidden {
+  display: none;
 }
