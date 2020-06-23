@@ -9,14 +9,14 @@
     />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>home</title>
-    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/style_2.css" />
   </head>
 
   <body>
     <header class="header">
       <div class="container">
         <ul class="header__items">
-          <li class="header-item">
+          <li class="header__item">
             <a href="/" class="logo">
               <img src="/" alt="WEB Studio"/>
             </a>
@@ -37,105 +37,130 @@
             </nav>
           </li>
 
-          
+          <li class="contacts">
             <ul class="contacts__list">
-              <li class="contacts__items">
+              <li class="contacts__item">
                 <svg class="contacts__icon">
                   <use xlink:href="/"></use>
                 </svg>
-                <a class="contacts__link" href="mailto:info@devstudio.com"
-                  >info@devstudio.com</a
-                >
+                <a class="contacts__link" href="mailto:info@devstudio.com"> 
+                  <span class="contacts__text">info@devstudio.com
+                  </span>
+                </a>
               </li>
-              <li class="contacts__items">
+              <li class="contacts__item">
                 <svg class="contacts__icon">
                   <use xlink:href="/"></use>
                 </svg>
-                <a class="contacts__link" href="tel:+38 096 111 11 11"
-                  >+38 096 111 11 11</a
-                >
+                <a class="contacts__link" href="tel:+38 096 111 11 11"> 
+                  <span class="contacts__text">+38 096 111 11 11
+                  </span>
+                </a>
               </li>
-            </ul> 
+            </ul>
+          </li>  
         </ul>
       </div>
     </header>
 
     <main class="layout">
-      <section class="layout__sect">
-        <h1 class="layout__main-title">
-          Эффективные решения для вашего бизнеса
-        </h1>
-        <button class="btn">Заказать услугу</button>
+      <section class="layout__section">
+        <div class="layout__main">
+          <h1 class="layout__main-title">
+            Эффективные решения для вашего бизнеса
+          </h1>
+          <button class="btn">
+            <span class="btn__text">
+              Заказать услугу
+            </span>
+          </button>
+        </div>
       </section>
 
-      <section class="layout__sect">
-        <ul class="layout__list">
-          <li class="layout__item">
-            <svg class="layout__item-icon">
-              <use xlink:href="/"></use>
-            </svg>
-            <p class="layout__title">Внимание к деталям</p>
-            <p class="layout__text text">
-              Идейные соображения, а также начало повседневной работы по
-              формированию позиции.
-            </p>
-          </li>
-
-          <li class="layout__item">
-            <svg class="layout__item-icon">
-              <use xlink:href="/"></use>
-            </svg>
-            <p class="layout__title">Пунктуальность</p>
-            <p class="layout__text text">
-              Задача организации, в особенности же рамки и место обучения кадров
-              влечет за собой.
-            </p>
-          </li>
-
-          <li class="layout__item">
-            <svg class="layout__item-icon">
-              <use xlink:href="/"></use>
-            </svg>
-            <p class="layout__title">Планирование</p>
-            <p class="layout__text text">
-              Равным образом консультация с широким активом в значительной
-              степени обуславливает.
-            </p>
-          </li>
-
-          <li class="layout__item">
-            <svg class="layout__item-icon">
-              <use xlink:href="/"></use>
-            </svg>
-            <p class="layout__title">Современные технологии</p>
-            <p class="layout__text text">
-              Значимость этих проблем настолько очевидна, что реализация
-              плановых заданий.
-            </p>
-          </li>
-        </ul>
+      <section class="layout__section">
+        <div class="layout">
+          <ul class="layout__list">
+            <li class="layout__item">
+              <svg class="layout__item-icon">
+                <use xlink:href="/"></use>
+              </svg>
+              <p class="layout__title">Внимание к деталям</p>
+              <p class="layout__text text">
+                Идейные соображения, а также начало повседневной работы по
+                формированию позиции.
+              </p>
+            </li>
+          
+            <li class="layout__item">
+              <svg class="layout__item-icon">
+                <use xlink:href="/"></use>
+              </svg>
+              <p class="layout__title">Пунктуальность</p>
+              <p class="layout__text text">
+                Задача организации, в особенности же рамки и место обучения кадров
+                влечет за собой.
+              </p>
+            </li>
+          
+            <li class="layout__item">
+              <svg class="layout__item-icon">
+                <use xlink:href="/"></use>
+              </svg>
+              <p class="layout__title">Планирование</p>
+              <p class="layout__text text">
+                Равным образом консультация с широким активом в значительной
+                степени обуславливает.
+              </p>
+            </li>
+          
+            <li class="layout__item">
+              <svg class="layout__item-icon">
+                <use xlink:href="/"></use>
+              </svg>
+              <p class="layout__title">Современные технологии</p>
+              <p class="layout__text text">
+                Значимость этих проблем настолько очевидна, что реализация
+                плановых заданий.
+              </p>
+            </li>
+          </ul>
+        </div>
       </section>
 
-      <section class="layout__sect block">
+      <section class="layout__section">
+        <div class="block">
           <h2 class="block__title">Чем мы занимаемся</h2>
           <ul class="block__list">
             <li class="block__item">
-              <img class="block__img" src="/" alt=""> 
-              Десктопные приложения</li>
+              <div class="img">
+                <img class="block__img" src="/" alt="">
+              </div>
+              Десктопные приложения
+            </li>
             <li class="block__item">
-              <img class="block__img" src="/" alt=""> 
-              Мобильные приложения</li>
+              <div class="img">
+                <img class="block__img" src="/" alt="">
+              </div>
+              Мобильные приложения
+            </li>
             <li class="block__item">
-              <img class="block__img" src="/" alt=""> 
-              Дизайнерские решения</li>
+              <div class="img">
+                <img class="block__img" src="/" alt="">
+              </div>
+              Дизайнерские решения
+            </li>
           </ul>
+        </div>
       </section>
 
-      <section class="layout__sect cards">
+      <section class="layout__section">
+        <div class="card">
           <ul class="card__list">
-            <li class="card__person">
-              <img class="card__img" src="/" alt="">
-              <p class="card__name">Николай Кучеренко</p>
+            <li class="card__item">
+              <div class="img">
+                <img class="card__img" src="/" alt="">
+              </div>
+              <h3 class="card__name">Николай Кучеренко</h3>
               <p class="card__description">Product Designer</p>
               <ul class="social">
                 <li class="social__list-item">
@@ -147,171 +172,179 @@
                 </li>
                 <li class="social__list-item">
                   <a class="social__link" href="">
-                  <svg class="social__item-icon">
-                    <use xlink:href="/"></use>
-                  </svg>
+                    <svg class="social__item-icon">
+                      <use xlink:href="/"></use>
+                    </svg>
                   </a>
                 </li>
                 <li class="social__list-item">
                   <a class="social__link" href="">
-                  <svg class="social__item-icon">
-                    <use xlink:href="/"></use>
-                  </svg>
+                    <svg class="social__item-icon">
+                      <use xlink:href="/"></use>
+                    </svg>
                   </a>
                 </li>
                 <li class="social__list-item">
                   <a class="social__link" href="">
-                  <svg class="social__item-icon">
-                    <use xlink:href="/"></use>
-                  </svg>
+                    <svg class="social__item-icon">
+                      <use xlink:href="/"></use>
+                    </svg>
                   </a>
                 </li>
               </ul>
             </li>
-
-            <li class="card__person">
-              <img class="card__img" src="/" alt="">
-              <p class="card__name">Ольга Иванова</p>
+          
+            <li class="card__item">
+              <div class="img">
+                <img class="card__img" src="/" alt="">
+              </div>
+              <h3 class="card__name">Ольга Иванова</h3>
               <p class="card__description">Frontend Developer</p>
               <ul class="social">
                 <li class="social__list-item">
                   <a class="social__link" href="">
-                  <svg class="social__item-icon">
-                    <use xlink:href="/"></use>
-                  </svg>
+                    <svg class="social__item-icon">
+                      <use xlink:href="/"></use>
+                    </svg>
                   </a>
                 </li>
                 <li class="social__list-item">
                   <a class="social__link" href="">
-                  <svg class="social__item-icon">
-                    <use xlink:href="/"></use>
-                  </svg>
+                    <svg class="social__item-icon">
+                      <use xlink:href="/"></use>
+                    </svg>
                   </a>
                 </li>
                 <li class="social__list-item">
                   <a class="social__link" href="">
-                  <svg class="social__item-icon">
-                    <use xlink:href="/"></use>
-                  </svg>
+                    <svg class="social__item-icon">
+                      <use xlink:href="/"></use>
+                    </svg>
                   </a>
                 </li>
                 <li class="social__list-item">
                   <a class="social__link" href="">
-                  <svg class="social__item-icon">
-                    <use xlink:href="/"></use>
-                  </svg>
+                    <svg class="social__item-icon">
+                      <use xlink:href="/"></use>
+                    </svg>
                   </a>
                 </li>
               </ul>
             </li>
-
-            <li class="card__person">
-              <img class="card__img" src="/" alt="">
-              <p class="card__name">Андрей Шевченко</p>
+          
+            <li class="card__item">
+              <div class="img">
+                <img class="card__img" src="/" alt="">
+              </div>
+              <h3 class="card__name">Андрей Шевченко</h3>
               <p class="card__description">Marketing</p>
               <ul class="social">
                 <li class="social__list-item">
                   <a class="social__link" href="">
-                  <svg class="social__item-icon">
-                    <use xlink:href="/"></use>
-                  </svg>
+                    <svg class="social__item-icon">
+                      <use xlink:href="/"></use>
+                    </svg>
                   </a>
                 </li>
                 <li class="social__list-item">
                   <a class="social__link" href="">
-                  <svg class="social__item-icon">
-                    <use xlink:href="/"></use>
-                  </svg>
+                    <svg class="social__item-icon">
+                      <use xlink:href="/"></use>
+                    </svg>
                   </a>
                 </li>
                 <li class="social__list-item">
                   <a class="social__link" href="">
-                  <svg class="social__item-icon">
-                    <use xlink:href="/"></use>
-                  </svg>
+                    <svg class="social__item-icon">
+                      <use xlink:href="/"></use>
+                    </svg>
                   </a>
                 </li>
                 <li class="social__list-item">
                   <a class="social__link" href="">
-                  <svg class="social__item-icon">
-                    <use xlink:href="/"></use>
-                  </svg>
+                    <svg class="social__item-icon">
+                      <use xlink:href="/"></use>
+                    </svg>
                   </a>
                 </li>
               </ul>
             </li>
 
-            <li class="card__person">
-              <img class="card__img" src="/" alt="">
-              <p class="card__name">Иван Николаев</p>
+            <li class="card__item">
+              <div class="img">
+                <img class="card__img" src="/" alt="">
+              </div>
+              <h3 class="card__name">Иван Николаев</h3>
               <p class="card__description">UI Designer</p>
               <ul class="social">
                 <li class="social__list-item">
                   <a class="social__link" href="">
-                  <svg class="social__item-icon">
-                    <use xlink:href="/"></use>
-                  </svg>
+                    <svg class="social__item-icon">
+                      <use xlink:href="/"></use>
+                    </svg>
                   </a>
                 </li>
                 <li class="social__list-item">
                   <a class="social__link" href="">
-                  <svg class="social__item-icon">
-                    <use xlink:href="/"></use>
-                  </svg>
+                    <svg class="social__item-icon">
+                      <use xlink:href="/"></use>
+                    </svg>
                   </a>
                 </li>
                 <li class="social__list-item">
                   <a class="social__link" href="">
-                  <svg class="social__item-icon">
-                    <use xlink:href="/"></use>
-                  </svg>
+                    <svg class="social__item-icon">
+                      <use xlink:href="/"></use>
+                    </svg>
                   </a>
                 </li>
                 <li class="social__list-item">
                   <a class="social__link" href="">
-                  <svg class="social__item-icon">
-                    <use xlink:href="/"></use>
-                  </svg>
+                    <svg class="social__item-icon">
+                      <use xlink:href="/"></use>
+                    </svg>
                   </a>
                 </li>
               </ul>
             </li>
           </ul>
+        </div class="card">
       </section>
 
-      <section class="layout__sect">
+      <section class="layout__section">
+        <div class="blocks">
           <h2>Постоянные клиенты</h2>
-          <ul class="blocks">
+          <ul class="blocks__list">
             <li class="blocks__item">
               <svg class="blocks__item-icon">
                 <use xlink:href="/"></use>
               </svg>
             </li>
-
+          
             <li class="blocks__item">
               <svg class="blocks__item-icon">
                 <use xlink:href="/"></use>
               </svg>
             </li>
-
+          
             <li class="blocks__item">
               <svg class="blocks__item-icon">
                 <use xlink:href="/"></use>
               </svg>
             </li>
-
+          
             <li class="blocks__item">
               <svg class="blocks__item-icon">
                 <use xlink:href="/"></use>
               </svg>
             </li>
-
+          
             <li class="blocks__item">
               <svg class="blocks__item-icon">
                 <use xlink:href="/"></use>
               </svg>
             </li>
-
+          
             <li class="blocks__item">
               <svg class="blocks__item-icon">
                 <use xlink:href="/"></use>
@@ -327,10 +360,12 @@
         <a href="/" class="logo"><img src="/" alt="WEB Studio" /></a>
       </div>
       <address class="address">г. Киев, пр-т Леси Украинки, 26</address>
-      <a class="contact-link" href="mailto:info@devstudio.com"
-        >info@devstudio.com</a
-      >
-      <a class="contact-link" href="tel:+380961111111">+38 096 111 11 11</a>
+      <a class="contact-link" href="mailto:info@devstudio.com">
+        <span class="contact__text">info@devstudio.com</span>
+      </a>
+      <a class="contact-link" href="tel:+380961111111"> 
+        <span class="contact__text">+38 096 111 11 11</span>
+      </a>
 
       <div class="footer__social">
         Присоединяйтесь
@@ -367,9 +402,11 @@
       </div>
 
       <p class="footer__text">Подпишитесь на рассылку</p>
-      <button class="btn">Подписаться</button>
+      <button class="btn">
+        <p>Подписаться</p>
+      </button>
 
-      <p class="center">2020 | Developed by GoIT Students</p>
+      <p class="footer__copyright">2020 | Developed by GoIT Students</p>
     </footer>
   </body>
 </html>
